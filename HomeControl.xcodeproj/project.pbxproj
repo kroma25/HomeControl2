@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0118B7652291B70200D6EF1A /* Harmonogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118B7642291B70200D6EF1A /* Harmonogram.swift */; };
+		012B726A21EBAF0E004E29A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B726921EBAF0E004E29A3 /* AppDelegate.swift */; };
+		012B726C21EBAF0E004E29A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B726B21EBAF0E004E29A3 /* ViewController.swift */; };
+		012B726F21EBAF0E004E29A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012B726D21EBAF0E004E29A3 /* Main.storyboard */; };
+		012B727421EBAF11004E29A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012B727221EBAF11004E29A3 /* LaunchScreen.storyboard */; };
+		012B727E21EC687F004E29A3 /* Window1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B727D21EC687F004E29A3 /* Window1ViewController.swift */; };
+		012B728221ED1F09004E29A3 /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = 012B728121ED1F09004E29A3 /* Readme */; };
+		01479EAA227CF46900C06404 /* ModuleOutSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01479EA9227CF46900C06404 /* ModuleOutSide.swift */; };
+		01672F4C228721550084323D /* Getstationsdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01672F4B228721550084323D /* Getstationsdata.swift */; };
+		01672F51228723870084323D /* ExtensionPercentEscaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01672F50228723870084323D /* ExtensionPercentEscaped.swift */; };
+		01672F53228729490084323D /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01672F52228729490084323D /* AccessToken.swift */; };
+		01672F55228735C00084323D /* ModuleInSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01672F54228735C00084323D /* ModuleInSide.swift */; };
+		01672F5722873E440084323D /* Thermostat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01672F5622873E440084323D /* Thermostat.swift */; };
+		01672F59228756640084323D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01672F58228756640084323D /* Assets.xcassets */; };
+		01672F5B228764200084323D /* ReadThermostat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01672F5A228764200084323D /* ReadThermostat.swift */; };
+		016A34E922A0743500D40D30 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 016A34E722A0743500D40D30 /* Data.xcdatamodeld */; };
+		016A34EB22A09D8500D40D30 /* ManagementDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A34EA22A09D8500D40D30 /* ManagementDataBase.swift */; };
+		016A352022A2D3DE00D40D30 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A351F22A2D3DE00D40D30 /* Control.swift */; };
+		01A467D422A31AF900CA37A0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467CF22A31AF900CA37A0 /* Utils.swift */; };
+		01A467D522A31AF900CA37A0 /* APChartPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467D022A31AF900CA37A0 /* APChartPoint.swift */; };
+		01A467D622A31AF900CA37A0 /* APChartLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467D122A31AF900CA37A0 /* APChartLine.swift */; };
+		01A467D722A31AF900CA37A0 /* APChartMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467D222A31AF900CA37A0 /* APChartMarker.swift */; };
+		01A467D822A31AF900CA37A0 /* APChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467D322A31AF900CA37A0 /* APChartView.swift */; };
+		01A467E922A3410C00CA37A0 /* APChartLine1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467E822A3410C00CA37A0 /* APChartLine1.swift */; };
+		01A467EB22A3413300CA37A0 /* APChartMarker1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467EA22A3413300CA37A0 /* APChartMarker1.swift */; };
+		01A467ED22A3414500CA37A0 /* APChartPoint1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467EC22A3414500CA37A0 /* APChartPoint1.swift */; };
+		01A467EF22A3416400CA37A0 /* APChartView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467EE22A3416400CA37A0 /* APChartView1.swift */; };
+		01A467F322A3C18D00CA37A0 /* APChartMarker2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467F222A3C18D00CA37A0 /* APChartMarker2.swift */; };
+		01A467F522A3C1A200CA37A0 /* APChartPoint2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467F422A3C1A200CA37A0 /* APChartPoint2.swift */; };
+		01A467F722A3C1C100CA37A0 /* APChartView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467F622A3C1C000CA37A0 /* APChartView2.swift */; };
+		01A467F922A3C1D600CA37A0 /* APChartLine2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467F822A3C1D600CA37A0 /* APChartLine2.swift */; };
+		01A467FB22A3C1E600CA37A0 /* APChartLine3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467FA22A3C1E600CA37A0 /* APChartLine3.swift */; };
+		01A467FD22A3C1FA00CA37A0 /* APChartMarker3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467FC22A3C1FA00CA37A0 /* APChartMarker3.swift */; };
+		01A467FF22A3C21D00CA37A0 /* APChartPoint3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A467FE22A3C21D00CA37A0 /* APChartPoint3.swift */; };
+		01A4680122A3C23100CA37A0 /* APChartView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A4680022A3C23100CA37A0 /* APChartView3.swift */; };
+		01A4680522A45CB300CA37A0 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A4680422A45CB300CA37A0 /* Stats.swift */; };
+		01A4680722A70A5300CA37A0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A4680622A70A5300CA37A0 /* Data.swift */; };
+		01AA0B8D229AC8F9006244E6 /* ModuleOutsideTheHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AA0B8C229AC8F9006244E6 /* ModuleOutsideTheHome.swift */; };
+		01AA0B8F229ACD66006244E6 /* ManagementModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AA0B8E229ACD66006244E6 /* ManagementModes.swift */; };
+		01AA0B92229C1EB5006244E6 /* ModuleComfort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AA0B91229C1EB5006244E6 /* ModuleComfort.swift */; };
+		01AA0B94229C51D9006244E6 /* ModuleEconomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AA0B93229C51D8006244E6 /* ModuleEconomic.swift */; };
+		01DE40E222947CA80015B0C7 /* WindowBlinds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE40E122947CA80015B0C7 /* WindowBlinds.swift */; };
+		01DE8518224676620061217E /* ListWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE8517224676620061217E /* ListWord.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		016A351722A2C0A000D40D30 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0118B7642291B70200D6EF1A /* Harmonogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harmonogram.swift; sourceTree = "<group>"; };
+		012B726621EBAF0E004E29A3 /* HomeControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		012B726921EBAF0E004E29A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		012B726B21EBAF0E004E29A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		012B726E21EBAF0E004E29A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		012B727321EBAF11004E29A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		012B727521EBAF11004E29A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		012B727D21EC687F004E29A3 /* Window1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window1ViewController.swift; sourceTree = "<group>"; };
+		012B728121ED1F09004E29A3 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		01479EA9227CF46900C06404 /* ModuleOutSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleOutSide.swift; sourceTree = "<group>"; };
+		01672F4B228721550084323D /* Getstationsdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Getstationsdata.swift; sourceTree = "<group>"; };
+		01672F50228723870084323D /* ExtensionPercentEscaped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPercentEscaped.swift; sourceTree = "<group>"; };
+		01672F52228729490084323D /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		01672F54228735C00084323D /* ModuleInSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleInSide.swift; sourceTree = "<group>"; };
+		01672F5622873E440084323D /* Thermostat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thermostat.swift; sourceTree = "<group>"; };
+		01672F58228756640084323D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01672F5A228764200084323D /* ReadThermostat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadThermostat.swift; sourceTree = "<group>"; };
+		016A34E822A0743500D40D30 /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
+		016A34EA22A09D8500D40D30 /* ManagementDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementDataBase.swift; sourceTree = "<group>"; };
+		016A351F22A2D3DE00D40D30 /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		01A467CF22A31AF900CA37A0 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		01A467D022A31AF900CA37A0 /* APChartPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APChartPoint.swift; sourceTree = "<group>"; };
+		01A467D122A31AF900CA37A0 /* APChartLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APChartLine.swift; sourceTree = "<group>"; };
+		01A467D222A31AF900CA37A0 /* APChartMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APChartMarker.swift; sourceTree = "<group>"; };
+		01A467D322A31AF900CA37A0 /* APChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APChartView.swift; sourceTree = "<group>"; };
+		01A467E822A3410C00CA37A0 /* APChartLine1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APChartLine1.swift; sourceTree = "<group>"; };
+		01A467EA22A3413300CA37A0 /* APChartMarker1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APChartMarker1.swift; path = HomeControl2/Charts/APChartMarker1.swift; sourceTree = SOURCE_ROOT; };
+		01A467EC22A3414500CA37A0 /* APChartPoint1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APChartPoint1.swift; sourceTree = "<group>"; };
+		01A467EE22A3416400CA37A0 /* APChartView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APChartView1.swift; sourceTree = "<group>"; };
+		01A467F222A3C18D00CA37A0 /* APChartMarker2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APChartMarker2.swift; sourceTree = "<group>"; };
+		01A467F422A3C1A200CA37A0 /* APChartPoint2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APChartPoint2.swift; path = HomeControl2/Charts/APChartPoint2.swift; sourceTree = SOURCE_ROOT; };
+		01A467F622A3C1C000CA37A0 /* APChartView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APChartView2.swift; sourceTree = "<group>"; };
+		01A467F822A3C1D600CA37A0 /* APChartLine2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APChartLine2.swift; path = HomeControl2/Charts/APChartLine2.swift; sourceTree = SOURCE_ROOT; };
+		01A467FA22A3C1E600CA37A0 /* APChartLine3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APChartLine3.swift; sourceTree = "<group>"; };
+		01A467FC22A3C1FA00CA37A0 /* APChartMarker3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APChartMarker3.swift; path = HomeControl2/Charts/APChartMarker3.swift; sourceTree = SOURCE_ROOT; };
+		01A467FE22A3C21D00CA37A0 /* APChartPoint3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APChartPoint3.swift; sourceTree = "<group>"; };
+		01A4680022A3C23100CA37A0 /* APChartView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APChartView3.swift; path = HomeControl2/Charts/APChartView3.swift; sourceTree = SOURCE_ROOT; };
+		01A4680422A45CB300CA37A0 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		01A4680622A70A5300CA37A0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		01AA0B8C229AC8F9006244E6 /* ModuleOutsideTheHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleOutsideTheHome.swift; sourceTree = "<group>"; };
+		01AA0B8E229ACD66006244E6 /* ManagementModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementModes.swift; sourceTree = "<group>"; };
+		01AA0B91229C1EB5006244E6 /* ModuleComfort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleComfort.swift; sourceTree = "<group>"; };
+		01AA0B93229C51D8006244E6 /* ModuleEconomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleEconomic.swift; sourceTree = "<group>"; };
+		01DE40E122947CA80015B0C7 /* WindowBlinds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowBlinds.swift; sourceTree = "<group>"; };
+		01DE8517224676620061217E /* ListWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWord.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		012B726321EBAF0E004E29A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		012B725D21EBAF0E004E29A3 = {
+			isa = PBXGroup;
+			children = (
+				012B728121ED1F09004E29A3 /* Readme */,
+				012B726821EBAF0E004E29A3 /* HomeControl2 */,
+				012B726721EBAF0E004E29A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		012B726721EBAF0E004E29A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				012B726621EBAF0E004E29A3 /* HomeControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		012B726821EBAF0E004E29A3 /* HomeControl2 */ = {
+			isa = PBXGroup;
+			children = (
+				01A467CE22A31AE400CA37A0 /* Charts */,
+				01672F4D2287215D0084323D /* Netatmo */,
+				012B727D21EC687F004E29A3 /* Window1ViewController.swift */,
+				01A4680422A45CB300CA37A0 /* Stats.swift */,
+				01A4680622A70A5300CA37A0 /* Data.swift */,
+				01DE8517224676620061217E /* ListWord.swift */,
+				012B726921EBAF0E004E29A3 /* AppDelegate.swift */,
+				012B726B21EBAF0E004E29A3 /* ViewController.swift */,
+				012B726D21EBAF0E004E29A3 /* Main.storyboard */,
+				016A351F22A2D3DE00D40D30 /* Control.swift */,
+				016A34EA22A09D8500D40D30 /* ManagementDataBase.swift */,
+				01672F58228756640084323D /* Assets.xcassets */,
+				012B727221EBAF11004E29A3 /* LaunchScreen.storyboard */,
+				012B727521EBAF11004E29A3 /* Info.plist */,
+				01DE40E122947CA80015B0C7 /* WindowBlinds.swift */,
+				01672F5622873E440084323D /* Thermostat.swift */,
+				01479EA9227CF46900C06404 /* ModuleOutSide.swift */,
+				01672F54228735C00084323D /* ModuleInSide.swift */,
+				01AA0B90229ACD8C006244E6 /* Management */,
+			);
+			path = HomeControl2;
+			sourceTree = "<group>";
+		};
+		01672F4D2287215D0084323D /* Netatmo */ = {
+			isa = PBXGroup;
+			children = (
+				01672F4B228721550084323D /* Getstationsdata.swift */,
+				01672F50228723870084323D /* ExtensionPercentEscaped.swift */,
+				01672F52228729490084323D /* AccessToken.swift */,
+				01672F5A228764200084323D /* ReadThermostat.swift */,
+			);
+			path = Netatmo;
+			sourceTree = "<group>";
+		};
+		01A467CE22A31AE400CA37A0 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				01A467E722A340B000CA37A0 /* Chart3 */,
+				01A467E622A340A800CA37A0 /* Chart2 */,
+				01A467E522A3407F00CA37A0 /* Chart1 */,
+				01A467D122A31AF900CA37A0 /* APChartLine.swift */,
+				01A467D222A31AF900CA37A0 /* APChartMarker.swift */,
+				01A467D022A31AF900CA37A0 /* APChartPoint.swift */,
+				01A467D322A31AF900CA37A0 /* APChartView.swift */,
+				01A467CF22A31AF900CA37A0 /* Utils.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		01A467E522A3407F00CA37A0 /* Chart1 */ = {
+			isa = PBXGroup;
+			children = (
+				01A467E822A3410C00CA37A0 /* APChartLine1.swift */,
+				01A467EA22A3413300CA37A0 /* APChartMarker1.swift */,
+				01A467EC22A3414500CA37A0 /* APChartPoint1.swift */,
+				01A467EE22A3416400CA37A0 /* APChartView1.swift */,
+			);
+			path = Chart1;
+			sourceTree = "<group>";
+		};
+		01A467E622A340A800CA37A0 /* Chart2 */ = {
+			isa = PBXGroup;
+			children = (
+				01A467F822A3C1D600CA37A0 /* APChartLine2.swift */,
+				01A467F222A3C18D00CA37A0 /* APChartMarker2.swift */,
+				01A467F422A3C1A200CA37A0 /* APChartPoint2.swift */,
+				01A467F622A3C1C000CA37A0 /* APChartView2.swift */,
+			);
+			path = Chart2;
+			sourceTree = "<group>";
+		};
+		01A467E722A340B000CA37A0 /* Chart3 */ = {
+			isa = PBXGroup;
+			children = (
+				01A467FA22A3C1E600CA37A0 /* APChartLine3.swift */,
+				01A467FC22A3C1FA00CA37A0 /* APChartMarker3.swift */,
+				01A467FE22A3C21D00CA37A0 /* APChartPoint3.swift */,
+				01A4680022A3C23100CA37A0 /* APChartView3.swift */,
+			);
+			path = Chart3;
+			sourceTree = "<group>";
+		};
+		01AA0B90229ACD8C006244E6 /* Management */ = {
+			isa = PBXGroup;
+			children = (
+				01AA0B8E229ACD66006244E6 /* ManagementModes.swift */,
+				01AA0B8C229AC8F9006244E6 /* ModuleOutsideTheHome.swift */,
+				01AA0B93229C51D8006244E6 /* ModuleEconomic.swift */,
+				01AA0B91229C1EB5006244E6 /* ModuleComfort.swift */,
+				0118B7642291B70200D6EF1A /* Harmonogram.swift */,
+				016A34E722A0743500D40D30 /* Data.xcdatamodeld */,
+			);
+			path = Management;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		012B726521EBAF0E004E29A3 /* HomeControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012B727821EBAF11004E29A3 /* Build configuration list for PBXNativeTarget "HomeControl" */;
+			buildPhases = (
+				012B726221EBAF0E004E29A3 /* Sources */,
+				012B726321EBAF0E004E29A3 /* Frameworks */,
+				012B726421EBAF0E004E29A3 /* Resources */,
+				016A351722A2C0A000D40D30 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeControl;
+			productName = HomeControl2;
+			productReference = 012B726621EBAF0E004E29A3 /* HomeControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		012B725E21EBAF0E004E29A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Przemyslaw Kromólski";
+				TargetAttributes = {
+					012B726521EBAF0E004E29A3 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 012B726121EBAF0E004E29A3 /* Build configuration list for PBXProject "HomeControl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 012B725D21EBAF0E004E29A3;
+			productRefGroup = 012B726721EBAF0E004E29A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				012B726521EBAF0E004E29A3 /* HomeControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		012B726421EBAF0E004E29A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012B728221ED1F09004E29A3 /* Readme in Resources */,
+				012B727421EBAF11004E29A3 /* LaunchScreen.storyboard in Resources */,
+				01672F59228756640084323D /* Assets.xcassets in Resources */,
+				012B726F21EBAF0E004E29A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		012B726221EBAF0E004E29A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01479EAA227CF46900C06404 /* ModuleOutSide.swift in Sources */,
+				01A467EF22A3416400CA37A0 /* APChartView1.swift in Sources */,
+				01AA0B8F229ACD66006244E6 /* ManagementModes.swift in Sources */,
+				016A352022A2D3DE00D40D30 /* Control.swift in Sources */,
+				01A467D722A31AF900CA37A0 /* APChartMarker.swift in Sources */,
+				01672F51228723870084323D /* ExtensionPercentEscaped.swift in Sources */,
+				01672F5B228764200084323D /* ReadThermostat.swift in Sources */,
+				0118B7652291B70200D6EF1A /* Harmonogram.swift in Sources */,
+				012B726C21EBAF0E004E29A3 /* ViewController.swift in Sources */,
+				01A467F522A3C1A200CA37A0 /* APChartPoint2.swift in Sources */,
+				01DE8518224676620061217E /* ListWord.swift in Sources */,
+				01A4680122A3C23100CA37A0 /* APChartView3.swift in Sources */,
+				01A467D622A31AF900CA37A0 /* APChartLine.swift in Sources */,
+				012B726A21EBAF0E004E29A3 /* AppDelegate.swift in Sources */,
+				012B727E21EC687F004E29A3 /* Window1ViewController.swift in Sources */,
+				01672F4C228721550084323D /* Getstationsdata.swift in Sources */,
+				01A467E922A3410C00CA37A0 /* APChartLine1.swift in Sources */,
+				01AA0B94229C51D9006244E6 /* ModuleEconomic.swift in Sources */,
+				01A467F322A3C18D00CA37A0 /* APChartMarker2.swift in Sources */,
+				01672F55228735C00084323D /* ModuleInSide.swift in Sources */,
+				01A467F922A3C1D600CA37A0 /* APChartLine2.swift in Sources */,
+				01AA0B8D229AC8F9006244E6 /* ModuleOutsideTheHome.swift in Sources */,
+				016A34E922A0743500D40D30 /* Data.xcdatamodeld in Sources */,
+				01672F5722873E440084323D /* Thermostat.swift in Sources */,
+				01672F53228729490084323D /* AccessToken.swift in Sources */,
+				01A4680522A45CB300CA37A0 /* Stats.swift in Sources */,
+				01A467ED22A3414500CA37A0 /* APChartPoint1.swift in Sources */,
+				01A467FD22A3C1FA00CA37A0 /* APChartMarker3.swift in Sources */,
+				01A467D422A31AF900CA37A0 /* Utils.swift in Sources */,
+				01A467D822A31AF900CA37A0 /* APChartView.swift in Sources */,
+				01A467EB22A3413300CA37A0 /* APChartMarker1.swift in Sources */,
+				01A467D522A31AF900CA37A0 /* APChartPoint.swift in Sources */,
+				01A467FF22A3C21D00CA37A0 /* APChartPoint3.swift in Sources */,
+				01A467FB22A3C1E600CA37A0 /* APChartLine3.swift in Sources */,
+				01A4680722A70A5300CA37A0 /* Data.swift in Sources */,
+				01AA0B92229C1EB5006244E6 /* ModuleComfort.swift in Sources */,
+				01A467F722A3C1C100CA37A0 /* APChartView2.swift in Sources */,
+				01DE40E222947CA80015B0C7 /* WindowBlinds.swift in Sources */,
+				016A34EB22A09D8500D40D30 /* ManagementDataBase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		012B726D21EBAF0E004E29A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				012B726E21EBAF0E004E29A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		012B727221EBAF11004E29A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				012B727321EBAF11004E29A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		012B727621EBAF11004E29A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		012B727721EBAF11004E29A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		012B727921EBAF11004E29A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38A4SPR332;
+				INFOPLIST_FILE = HomeControl2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kromka.HomeControl2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		012B727A21EBAF11004E29A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38A4SPR332;
+				INFOPLIST_FILE = HomeControl2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kromka.HomeControl2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		012B726121EBAF0E004E29A3 /* Build configuration list for PBXProject "HomeControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012B727621EBAF11004E29A3 /* Debug */,
+				012B727721EBAF11004E29A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		012B727821EBAF11004E29A3 /* Build configuration list for PBXNativeTarget "HomeControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012B727921EBAF11004E29A3 /* Debug */,
+				012B727A21EBAF11004E29A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		016A34E722A0743500D40D30 /* Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				016A34E822A0743500D40D30 /* Data.xcdatamodel */,
+			);
+			currentVersion = 016A34E822A0743500D40D30 /* Data.xcdatamodel */;
+			path = Data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 012B725E21EBAF0E004E29A3 /* Project object */;
+}

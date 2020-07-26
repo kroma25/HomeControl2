@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fcO-us-aU8">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ekran Główny-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Ekran Główny" customClass="ViewController" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A4g-gl-Rgp">
+                                <rect key="frame" x="67" y="556" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwI-UM-K4D">
+                                <rect key="frame" x="104" y="333" width="166" height="166"/>
+                                <state key="normal" title="Start Recording" image="mic">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="mic1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qlp-U4-DDt"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KeM-Qg-paZ">
+                                <rect key="frame" x="0.0" y="88" width="190" height="724"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Mw-Vw-TB3">
+                                        <rect key="frame" x="8" y="16" width="174" height="470"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpA-jn-526">
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Jrm-fe-Lhn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Światło">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="B46-Df-TEe" kind="show" id="vtL-3h-wVg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwF-bd-5Ii">
+                                                <rect key="frame" x="0.0" y="60" width="174" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="yb7-qe-Wef"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Rolety">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="bBb-gZ-3L2" kind="show" id="eIj-ui-ZN1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4e-Wq-dcJ">
+                                                <rect key="frame" x="0.0" y="120" width="174" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ba5-dW-QnK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Moduł Zewnętrzny">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="tcJ-U1-3OV" kind="show" id="Hlq-v2-E5W"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nk-CE-exm">
+                                                <rect key="frame" x="0.0" y="180" width="174" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="QCk-pk-Ozb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Moduł Wewnętrzny">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="2dx-V2-jgX" kind="show" id="IiE-XK-cOw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpw-od-R5q">
+                                                <rect key="frame" x="0.0" y="240" width="174" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="aHH-TH-iwg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Termostat">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="MSK-CF-fUI" kind="show" id="t1I-4V-HCK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPT-x6-okO" userLabel="Zarządzanie">
+                                                <rect key="frame" x="0.0" y="300" width="174" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="QVP-7Y-WnI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Zarządzanie">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="1Nf-8a-BGB" kind="show" id="7cJ-mE-goV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89b-7g-qgO" userLabel="Statystyki">
+                                                <rect key="frame" x="0.0" y="360" width="174" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="3Hc-jY-rdj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Statystyki">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="ZBE-Zu-eT1" kind="show" id="1KZ-UH-A8n"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnN-R0-v12" userLabel="Baza danych">
+                                                <rect key="frame" x="0.0" y="420" width="174" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="VfD-1B-Guj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Baza danych">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="X1j-he-KNq" kind="show" id="4PS-TJ-q1q"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="3Mw-Vw-TB3" firstAttribute="top" secondItem="KeM-Qg-paZ" secondAttribute="top" constant="16" id="20I-lm-esk"/>
+                                    <constraint firstItem="3Mw-Vw-TB3" firstAttribute="leading" secondItem="KeM-Qg-paZ" secondAttribute="leading" constant="8" id="M2C-Pr-R49"/>
+                                    <constraint firstAttribute="width" constant="190" id="aMt-8j-nJR"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Mw-Vw-TB3" secondAttribute="trailing" constant="8" id="g3E-7U-TBi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oaY-hJ-qGB" firstAttribute="bottom" secondItem="UwI-UM-K4D" secondAttribute="bottom" constant="279" id="CAx-Rv-3ck"/>
+                            <constraint firstItem="KeM-Qg-paZ" firstAttribute="bottom" secondItem="oaY-hJ-qGB" secondAttribute="bottom" constant="34" id="Q7N-lW-mPw"/>
+                            <constraint firstItem="oaY-hJ-qGB" firstAttribute="bottom" secondItem="KeM-Qg-paZ" secondAttribute="bottom" constant="-34" id="SUn-vj-RyM"/>
+                            <constraint firstItem="UwI-UM-K4D" firstAttribute="top" secondItem="oaY-hJ-qGB" secondAttribute="top" constant="245" id="XyE-mY-5W2"/>
+                            <constraint firstItem="UwI-UM-K4D" firstAttribute="leading" secondItem="oaY-hJ-qGB" secondAttribute="leading" constant="104" id="YqC-zc-fN2"/>
+                            <constraint firstItem="KeM-Qg-paZ" firstAttribute="bottom" secondItem="oaY-hJ-qGB" secondAttribute="bottom" constant="34" id="ZUK-8a-c4U"/>
+                            <constraint firstItem="KeM-Qg-paZ" firstAttribute="leading" secondItem="oaY-hJ-qGB" secondAttribute="leading" id="cKu-MC-8RB"/>
+                            <constraint firstItem="oaY-hJ-qGB" firstAttribute="trailing" secondItem="UwI-UM-K4D" secondAttribute="trailing" constant="105" id="oC4-ew-8YL"/>
+                            <constraint firstItem="KeM-Qg-paZ" firstAttribute="top" secondItem="oaY-hJ-qGB" secondAttribute="top" id="tTR-pa-yak"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oaY-hJ-qGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HomeControl" id="BMh-Td-dan">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu_white_3x" id="oas-lW-Dbh">
+                            <connections>
+                                <action selector="slideBar:" destination="BYZ-38-t0r" id="vvp-b3-0AW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="leadingConstraint" destination="cKu-MC-8RB" id="yAn-Fa-vGk"/>
+                        <outlet property="menuView" destination="KeM-Qg-paZ" id="raT-2K-Ufd"/>
+                        <outlet property="mic1" destination="UwI-UM-K4D" id="Hrf-Ra-RCB"/>
+                        <outlet property="textView" destination="A4g-gl-Rgp" id="msE-M0-ULn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.20000000000005" y="792.11822660098528"/>
+        </scene>
+        <!--Światło-->
+        <scene sceneID="DHL-ec-2iY">
+            <objects>
+                <viewController id="B46-Df-TEe" userLabel="Światło" customClass="Window1ViewController" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aUH-f9-Z9R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RU-Fa-GMb">
+                                <rect key="frame" x="137.66666666666666" y="383" width="100" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Xi0-lt-s9n"/>
+                                    <constraint firstAttribute="width" constant="100" id="tr4-2D-geK"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="on_off">
+                                    <color key="titleColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button2:" destination="B46-Df-TEe" eventType="touchUpInside" id="60j-b0-b4B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uW-ND-bHo">
+                                <rect key="frame" x="285" y="708" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0zE-SZ-Zfx"/>
+                                    <constraint firstAttribute="width" constant="70" id="O1D-P0-j3r"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="X24-Di-8s5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="ZZc-et-FFY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Mic" image="mic">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="mic1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2J4-GF-2nl"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="HXd-oT-fug">
+                                <rect key="frame" x="87" y="558" width="201" height="31"/>
+                                <connections>
+                                    <action selector="sliderBrightnessLight:" destination="B46-Df-TEe" eventType="valueChanged" id="9PC-3o-gcl"/>
+                                </connections>
+                            </slider>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iIw-7U-h8F">
+                                <rect key="frame" x="26" y="88" width="322" height="275"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenDot" translatesAutoresizingMaskIntoConstraints="NO" id="74q-3G-IL9" userLabel="GreenDot">
+                                <rect key="frame" x="285" y="210" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Natężenie: X %" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnM-Pt-kbf">
+                                <rect key="frame" x="54" y="621" width="266" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedDot" translatesAutoresizingMaskIntoConstraints="NO" id="3cU-Jf-W1h">
+                                <rect key="frame" x="285" y="210" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HXd-oT-fug" firstAttribute="top" secondItem="2RU-Fa-GMb" secondAttribute="bottom" constant="65" id="EOL-O9-mn2"/>
+                            <constraint firstItem="3uW-ND-bHo" firstAttribute="bottom" secondItem="ISK-p5-pUf" secondAttribute="bottom" id="J3M-se-gTj"/>
+                            <constraint firstItem="HXd-oT-fug" firstAttribute="leading" secondItem="ISK-p5-pUf" secondAttribute="leading" constant="89" id="OC6-iA-ejK"/>
+                            <constraint firstItem="HXd-oT-fug" firstAttribute="centerX" secondItem="ISK-p5-pUf" secondAttribute="centerX" id="P4V-oG-QH2"/>
+                            <constraint firstItem="ISK-p5-pUf" firstAttribute="trailing" secondItem="3uW-ND-bHo" secondAttribute="trailing" constant="20" id="S3c-is-qlT"/>
+                            <constraint firstItem="2RU-Fa-GMb" firstAttribute="centerX" secondItem="ISK-p5-pUf" secondAttribute="centerX" id="qix-1C-UVH"/>
+                            <constraint firstItem="2RU-Fa-GMb" firstAttribute="top" secondItem="ISK-p5-pUf" secondAttribute="top" constant="295" id="seo-cm-e0f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ISK-p5-pUf"/>
+                    </view>
+                    <connections>
+                        <outlet property="greenDot" destination="74q-3G-IL9" id="E1j-Dv-e0N"/>
+                        <outlet property="labelBrightnessLight" destination="TnM-Pt-kbf" id="Kpp-hg-sb9"/>
+                        <outlet property="picker" destination="iIw-7U-h8F" id="FqK-5h-yxd"/>
+                        <outlet property="redDot" destination="3cU-Jf-W1h" id="cxv-OI-gQC"/>
+                        <outlet property="sliderBrightnessLight" destination="HXd-oT-fug" id="GOl-mo-SOA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Azw-0e-0qA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893.60000000000002" y="1580.5418719211823"/>
+        </scene>
+        <!--Rolety-->
+        <scene sceneID="aFp-1n-lhS">
+            <objects>
+                <viewController id="bBb-gZ-3L2" userLabel="Rolety" customClass="WindowBlinds" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yp7-If-hEh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yg7-5P-0yJ" userLabel="Up">
+                                <rect key="frame" x="135.66666666666666" y="249" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="WvR-xk-h6G"/>
+                                    <constraint firstAttribute="height" constant="100" id="sVd-BR-IaM"/>
+                                </constraints>
+                                <state key="normal" image="gora">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonUp:" destination="bBb-gZ-3L2" eventType="touchDown" id="w9i-Xh-Iy3"/>
+                                    <action selector="buttonUpRelase:" destination="bBb-gZ-3L2" eventType="touchUpInside" id="WwS-dM-WMT"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMc-yU-QpN">
+                                <rect key="frame" x="285" y="708" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="QEy-CC-CsC"/>
+                                    <constraint firstAttribute="width" constant="70" id="RpY-9M-Rxl"/>
+                                </constraints>
+                                <state key="normal" title="Mic" image="mic">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="mic1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E7z-Wu-PBj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAk-DE-R3C" userLabel="Stop">
+                                <rect key="frame" x="135.66666666666666" y="383" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0g0-VS-dAK"/>
+                                    <constraint firstAttribute="width" constant="100" id="pfM-Ck-QMK"/>
+                                </constraints>
+                                <state key="normal" image="circle">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonStop:" destination="bBb-gZ-3L2" eventType="touchDown" id="JDX-Vf-C11"/>
+                                    <action selector="buttonStopRelase:" destination="bBb-gZ-3L2" eventType="touchUpInside" id="QzN-UP-doa"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V5f-fC-o0v">
+                                <rect key="frame" x="16" y="88" width="339" height="153"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0f-Df-gdk" userLabel="Down">
+                                <rect key="frame" x="135.66666666666666" y="511" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="98S-4D-5pu"/>
+                                    <constraint firstAttribute="height" constant="100" id="U12-Jh-3M4"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="dol">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDown:" destination="bBb-gZ-3L2" eventType="touchDown" id="4RN-Nr-ZhF"/>
+                                    <action selector="buttonDownRelase:" destination="bBb-gZ-3L2" eventType="touchUpInside" id="GP2-hT-zHT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLp-Qi-FJv" userLabel="Plus">
+                                <rect key="frame" x="52" y="688" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="fkW-Cj-AEF"/>
+                                    <constraint firstAttribute="height" constant="75" id="trU-1r-Zem"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="plus">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPlus:" destination="bBb-gZ-3L2" eventType="touchDown" id="Uv7-An-32h"/>
+                                    <action selector="buttonPlusRelase:" destination="bBb-gZ-3L2" eventType="touchUpInside" id="OyN-zW-Ppl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fev-gW-FIi" userLabel="Minus">
+                                <rect key="frame" x="238" y="688" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="fXr-n4-dhQ"/>
+                                    <constraint firstAttribute="width" constant="75" id="hrC-o5-0L4"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="minus">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonMinus:" destination="bBb-gZ-3L2" eventType="touchDown" id="3V9-Sv-noq"/>
+                                    <action selector="buttonMinusRelase:" destination="bBb-gZ-3L2" eventType="touchUpInside" id="AHX-jU-r8g"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="0" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmo-p4-SVh" userLabel="TempGrzejnik">
+                                <rect key="frame" x="100" y="628" width="104" height="64"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="°" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZe-Nf-TSb" userLabel="Stopnie">
+                                <rect key="frame" x="182" y="624" width="61" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gmo-p4-SVh" firstAttribute="top" secondItem="r0f-Df-gdk" secondAttribute="bottom" constant="17" id="1W5-cZ-NmD"/>
+                            <constraint firstItem="VLp-Qi-FJv" firstAttribute="leading" secondItem="2fB-2M-Df9" secondAttribute="leading" constant="52" id="1tC-mL-Y8L"/>
+                            <constraint firstItem="VLp-Qi-FJv" firstAttribute="top" secondItem="fev-gW-FIi" secondAttribute="top" id="5Ju-wd-tm0"/>
+                            <constraint firstItem="aMc-yU-QpN" firstAttribute="bottom" secondItem="2fB-2M-Df9" secondAttribute="bottom" id="Amq-MU-nwT"/>
+                            <constraint firstItem="2fB-2M-Df9" firstAttribute="bottom" secondItem="VLp-Qi-FJv" secondAttribute="bottom" constant="15" id="Lul-oC-qqd"/>
+                            <constraint firstItem="TAk-DE-R3C" firstAttribute="centerY" secondItem="Yp7-If-hEh" secondAttribute="centerY" constant="27" id="M9X-t6-aGU"/>
+                            <constraint firstItem="TAk-DE-R3C" firstAttribute="centerX" secondItem="2fB-2M-Df9" secondAttribute="centerX" constant="-2" id="McA-pa-5FI"/>
+                            <constraint firstItem="Gmo-p4-SVh" firstAttribute="leading" secondItem="2fB-2M-Df9" secondAttribute="leading" constant="100" id="Q9Y-YM-mYT"/>
+                            <constraint firstItem="r0f-Df-gdk" firstAttribute="top" secondItem="TAk-DE-R3C" secondAttribute="bottom" constant="28" id="Ruj-tC-AxI"/>
+                            <constraint firstItem="TAk-DE-R3C" firstAttribute="top" secondItem="yg7-5P-0yJ" secondAttribute="bottom" constant="34" id="Y5n-ir-rs9"/>
+                            <constraint firstItem="fev-gW-FIi" firstAttribute="top" secondItem="Gmo-p4-SVh" secondAttribute="bottom" id="adM-7o-sAL"/>
+                            <constraint firstItem="2fB-2M-Df9" firstAttribute="trailing" secondItem="fev-gW-FIi" secondAttribute="trailing" constant="62" id="bUd-LB-ZSl"/>
+                            <constraint firstItem="yg7-5P-0yJ" firstAttribute="centerX" secondItem="2fB-2M-Df9" secondAttribute="centerX" constant="-2" id="e81-7N-boC"/>
+                            <constraint firstItem="r0f-Df-gdk" firstAttribute="centerX" secondItem="2fB-2M-Df9" secondAttribute="centerX" constant="-2" id="iQ0-g4-IoS"/>
+                            <constraint firstItem="Gmo-p4-SVh" firstAttribute="centerX" secondItem="Yp7-If-hEh" secondAttribute="centerX" constant="-35" id="j4s-nv-Uwl"/>
+                            <constraint firstItem="2fB-2M-Df9" firstAttribute="trailing" secondItem="aMc-yU-QpN" secondAttribute="trailing" constant="20" id="odC-4a-9jS"/>
+                            <constraint firstItem="VLp-Qi-FJv" firstAttribute="top" secondItem="Gmo-p4-SVh" secondAttribute="bottom" id="zgY-ow-uMi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2fB-2M-Df9"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelDegree" destination="Gmo-p4-SVh" id="MLl-jo-LWI"/>
+                        <outlet property="picker" destination="V5f-fC-o0v" id="ARY-pr-Ga2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CLZ-uV-qyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="1581.2807881773399"/>
+        </scene>
+        <!--Moduł Zewnętrzny-->
+        <scene sceneID="rAd-0t-U3U">
+            <objects>
+                <viewController id="tcJ-U1-3OV" userLabel="Moduł Zewnętrzny" customClass="ModuleOutSide" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Va-CW-7Aq" userLabel="Pogoda">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Moduł zewnętrzny" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNp-kx-7T3" userLabel="Modul zewnetrzny">
+                                <rect key="frame" x="16" y="88" width="343" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Temperatura: X°C" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOm-d6-CBR">
+                                <rect key="frame" x="16" y="184" width="343" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Wilgotność: X%" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hs-mC-3R5">
+                                <rect key="frame" x="16" y="252" width="310" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Ciśnienie: X mbar" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpd-bO-rGs">
+                                <rect key="frame" x="16" y="320" width="343" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tYu-6n-Ef0"/>
+                    </view>
+                    <connections>
+                        <outlet property="zewCisnLabel" destination="fpd-bO-rGs" id="ryu-ZX-t2g"/>
+                        <outlet property="zewTempLabel" destination="qOm-d6-CBR" id="lIV-8t-iP2"/>
+                        <outlet property="zewWilgLabel" destination="0hs-mC-3R5" id="4Mc-io-PH3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUi-TB-1iU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1669.5999999999999" y="1581.2807881773399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NnK-Md-Sjn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fcO-us-aU8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M9P-b1-0kq">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zx9-9n-d9O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Isf-te-BiC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="792.95352323838085"/>
+        </scene>
+        <!--Moduł Wewnętrzny-->
+        <scene sceneID="2gG-Ay-zZX">
+            <objects>
+                <viewController id="2dx-V2-jgX" userLabel="Moduł Wewnętrzny" customClass="ModuleInSide" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZY7-pI-oKL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Moduł wewnętrzny" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kd-Cb-jBe" userLabel="Modul wewnetrzny">
+                                <rect key="frame" x="16" y="88" width="343" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Temperatura: X°C" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyc-aN-phf">
+                                <rect key="frame" x="16" y="186" width="343" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Wilgotność: X%" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0X-xR-FpN">
+                                <rect key="frame" x="16" y="254" width="310" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="CO₂: X ppm" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm8-IW-Cdq">
+                                <rect key="frame" x="16" y="322" width="343" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Głośność: X db" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C32-CM-489">
+                                <rect key="frame" x="16" y="390" width="343" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Ciśnienie: X mbar" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRf-iq-IzK">
+                                <rect key="frame" x="16" y="458" width="343" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CuM-4g-lhh"/>
+                    </view>
+                    <connections>
+                        <outlet property="wewCO2Label" destination="nm8-IW-Cdq" id="XUO-Lm-1Ka"/>
+                        <outlet property="wewCisnienieLabel" destination="hRf-iq-IzK" id="3vw-4a-NUC"/>
+                        <outlet property="wewGlosnoscLabel" destination="C32-CM-489" id="eEi-zp-Jw4"/>
+                        <outlet property="wewTemperaturaLabel" destination="oyc-aN-phf" id="MSF-rk-UVF"/>
+                        <outlet property="wewWilgotnoscLabel" destination="S0X-xR-FpN" id="CJB-lR-MAZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DKp-LJ-cYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2381.5999999999999" y="1580.5418719211823"/>
+        </scene>
+        <!--Termostat-->
+        <scene sceneID="qYw-lv-4La">
+            <objects>
+                <viewController id="MSK-CF-fUI" userLabel="Termostat" customClass="Thermostat" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BwG-Dn-xDK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Termostat" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8e-bK-2ef" userLabel="Termostat">
+                                <rect key="frame" x="16" y="88" width="343" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Grzejnik" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oz1-XF-U3n" userLabel="Grzejnik">
+                                <rect key="frame" x="16" y="424" width="343" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="XX.X°C" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rh-fn-c82" userLabel="TempGrzejnik">
+                                <rect key="frame" x="16" y="552" width="343" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkL-Se-9nV" userLabel="Plus">
+                                <rect key="frame" x="67" y="645" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="OCK-2H-Fea"/>
+                                    <constraint firstAttribute="height" constant="100" id="R1a-J8-f5E"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="plus">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="plusTempGrzejnikButton:" destination="MSK-CF-fUI" eventType="touchUpInside" id="faI-1N-thC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6I-c8-xiu" userLabel="Minus">
+                                <rect key="frame" x="194" y="282" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Fy6-4g-6FY"/>
+                                    <constraint firstAttribute="height" constant="100" id="qIB-aZ-Fcb"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="minus">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="minusTempTermostatButton:" destination="MSK-CF-fUI" eventType="touchUpInside" id="i0O-1Y-GEt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0C-Ke-TPx" userLabel="Plus">
+                                <rect key="frame" x="67" y="282" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8q8-XN-EBb"/>
+                                    <constraint firstAttribute="width" constant="100" id="W5Y-SB-oyL"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="plus">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="plusTempTermostatButton:" destination="MSK-CF-fUI" eventType="touchUpInside" id="rkx-td-qL4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zg-kG-eZE" userLabel="Minus">
+                                <rect key="frame" x="194" y="645" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="O22-cR-OmY"/>
+                                    <constraint firstAttribute="width" constant="100" id="QNh-wa-rMr"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="minus">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="minusTempGrzejnikButton:" destination="MSK-CF-fUI" eventType="touchUpInside" id="7Uc-cd-uSa"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="XX.X°C" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b88-Kb-9Fq" userLabel="TempTermostat">
+                                <rect key="frame" x="194" y="147" width="123" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="XX.X°C" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rd-JC-46v" userLabel="TempTermostat">
+                                <rect key="frame" x="194" y="504" width="123" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="XX.X°C" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rh-Uf-5n8" userLabel="TempTermostat">
+                                <rect key="frame" x="16" y="189" width="343" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DgA-5Q-DgL">
+                                <rect key="frame" x="0.0" y="390" width="375" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l7M-Nb-M0W" firstAttribute="trailing" secondItem="D6I-c8-xiu" secondAttribute="trailing" constant="81" id="5Lv-Me-vXj"/>
+                            <constraint firstItem="6Zg-kG-eZE" firstAttribute="leading" secondItem="l7M-Nb-M0W" secondAttribute="leading" constant="194" id="HjS-6C-tyA"/>
+                            <constraint firstItem="l7M-Nb-M0W" firstAttribute="bottom" secondItem="6Zg-kG-eZE" secondAttribute="bottom" constant="33" id="XKB-LO-HeQ"/>
+                            <constraint firstItem="R0C-Ke-TPx" firstAttribute="top" secondItem="l7M-Nb-M0W" secondAttribute="top" constant="194" id="ZvS-bp-eSq"/>
+                            <constraint firstItem="l7M-Nb-M0W" firstAttribute="trailing" secondItem="R0C-Ke-TPx" secondAttribute="trailing" constant="208" id="gQv-4s-6xW"/>
+                            <constraint firstItem="D6I-c8-xiu" firstAttribute="top" secondItem="l7M-Nb-M0W" secondAttribute="top" constant="194" id="hP1-gI-ShP"/>
+                            <constraint firstItem="l7M-Nb-M0W" firstAttribute="bottom" secondItem="PkL-Se-9nV" secondAttribute="bottom" constant="33" id="jNH-oR-pmO"/>
+                            <constraint firstItem="6Zg-kG-eZE" firstAttribute="leading" secondItem="l7M-Nb-M0W" secondAttribute="leading" constant="194" id="mfX-Ip-JSz"/>
+                            <constraint firstItem="PkL-Se-9nV" firstAttribute="leading" secondItem="l7M-Nb-M0W" secondAttribute="leading" constant="67" id="w1a-at-DZs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l7M-Nb-M0W"/>
+                    </view>
+                    <connections>
+                        <outlet property="TemperaturaGrzejnikLabel" destination="9rh-fn-c82" id="XpB-IQ-1wK"/>
+                        <outlet property="TemperaturaGrzejnikNowaLabel" destination="4Rd-JC-46v" id="B8W-1Y-rpd"/>
+                        <outlet property="TemperaturaTermostatLabel" destination="4Rh-Uf-5n8" id="zFL-oa-2fw"/>
+                        <outlet property="TemperaturaTermostatNowaLabel" destination="b88-Kb-9Fq" id="DYF-Wm-snc"/>
+                        <outlet property="picker" destination="DgA-5Q-DgL" id="a7p-Zu-cgN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8MS-TE-2px" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-588" y="1580.5418719211823"/>
+        </scene>
+        <!--Zarządzanie 2-->
+        <scene sceneID="tcg-CP-TrD">
+            <objects>
+                <viewController title="Zarządznie" id="lsc-Om-9d5" userLabel="Zarządzanie 2" customClass="ManagementModes" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aJ0-ZX-BSm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwR-FG-YBo">
+                                <rect key="frame" x="93" y="88" width="188" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Harmonogram">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JPQ-qg-USk" kind="show" id="fL4-oh-BKY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLE-3C-ubg">
+                                <rect key="frame" x="69" y="142" width="238" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Tryb ekonomiczny">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZRJ-n8-w3c" kind="show" id="Umw-HI-Iko"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EY9-Qy-0cu">
+                                <rect key="frame" x="76" y="196" width="222" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Tryb komfortowy">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4It-Vs-03l" kind="show" id="Y8K-Sf-ie5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbV-Xk-BXB">
+                                <rect key="frame" x="71" y="250" width="232" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Tryb poza domem">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lRG-v5-0WW" kind="show" id="lEC-zj-UxF"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Wybrany tryb: Ekonomiczny" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbX-Bh-4Yf">
+                                <rect key="frame" x="16" y="344" width="343" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Aktualne zużycie energii: 100 kWh" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wA-RV-mhc">
+                                <rect key="frame" x="16" y="399" width="343" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Zużycie energii w poprzednim miesiącu: 100 kWh" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujq-Mj-QJr">
+                                <rect key="frame" x="16" y="454" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Przewidywane zużycie w tym miesiącu: 100 kWh" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5U-H5-09k">
+                                <rect key="frame" x="16" y="514" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="FYi-O7-XKF"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelModeChoice" destination="gbX-Bh-4Yf" id="670-zc-F41"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ev-jV-H5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3096.8000000000002" y="1580.5418719211823"/>
+        </scene>
+        <!--Harmonogram-->
+        <scene sceneID="uv8-Bb-cgW">
+            <objects>
+                <viewController title="Harmonogram" id="JPQ-qg-USk" userLabel="Harmonogram" customClass="Harmonogram" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jj4-ue-cnE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bqh-4w-nI2">
+                                <rect key="frame" x="0.0" y="88" width="375" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="2si-lm-XHJ">
+                                <rect key="frame" x="6" y="218" width="375" height="118"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="579963588.23240399">
+                                    <!--2019-05-19 12:59:48 +0000-->
+                                </date>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="4ja-4j-kgI">
+                                <rect key="frame" x="0.0" y="344" width="375" height="118"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="579963588.23240399">
+                                    <!--2019-05-19 12:59:48 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qR4-Q1-Vje">
+                                <rect key="frame" x="142" y="457" width="90" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Wstaw">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GzN-i6-ZMT">
+                                <rect key="frame" x="73" y="541" width="240" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" label="e">
+                            <accessibilityTraits key="traits" none="YES"/>
+                        </accessibility>
+                        <viewLayoutGuide key="safeArea" id="1Fd-9o-aRM"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonWstaw" destination="qR4-Q1-Vje" id="zy6-cq-dwb"/>
+                        <outlet property="picker" destination="bqh-4w-nI2" id="8XZ-SL-MaJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9iT-r0-T5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2980" y="2373"/>
+        </scene>
+        <!--Tryb ekonomiczny-->
+        <scene sceneID="yL0-Se-mIY">
+            <objects>
+                <viewController id="ZRJ-n8-w3c" userLabel="Tryb ekonomiczny" customClass="ModuleEconomic" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uIv-Kl-Kw5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Tryb ekonomiczny" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibQ-Ky-ipV" userLabel="Tryb ekonomiczny">
+                                <rect key="frame" x="16" y="88" width="343" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Sterowanie roletami powoduje obniżenie i podwyższenie temeratury" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcQ-KG-Edf">
+                                <rect key="frame" x="16" y="190" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Otwarte okno wyłącza ogrzewanie" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frA-Y7-Iwp">
+                                <rect key="frame" x="16" y="250" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Maksymalne natężenie włączonego światła  wynosi 50%" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckP-R0-Yz3">
+                                <rect key="frame" x="16" y="310" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Czujnik ruchu wyłącza światło jeśli nie wykryje ruchu przez 10 min." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfx-uu-8ZE">
+                                <rect key="frame" x="16" y="380" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Odczytywana temperatura z zewnątrz koryguje temperature wewnątrz" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YI-ro-Z7a">
+                                <rect key="frame" x="16" y="440" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Brak możlwiości manualnej regulacji temperatury" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiS-ps-Bgb">
+                                <rect key="frame" x="16" y="500" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fq-Zg-h0b">
+                                <rect key="frame" x="133" y="689" width="108" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Wybierz">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonME:" destination="ZRJ-n8-w3c" eventType="touchUpInside" id="dZM-2p-sEx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" label="e">
+                            <accessibilityTraits key="traits" none="YES"/>
+                        </accessibility>
+                        <viewLayoutGuide key="safeArea" id="Njp-mK-dhS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMK-Uk-M9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3805.5999999999999" y="2372.6600985221676"/>
+        </scene>
+        <!--Tryb komfortowy-->
+        <scene sceneID="suM-Gc-uId">
+            <objects>
+                <viewController id="4It-Vs-03l" userLabel="Tryb komfortowy" customClass="ModuleComfort" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LyE-xf-blC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Tryb komfortowy" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gU-7t-7dy" userLabel="Tryb ekonomiczny">
+                                <rect key="frame" x="16" y="88" width="343" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Możliwość zmiany temeratury według upodobań użytkownika" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpT-gv-nhB">
+                                <rect key="frame" x="15" y="175" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Dowolna regulacja natężenia światła przez użytkownika" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuG-Oh-BTH">
+                                <rect key="frame" x="15" y="235" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Otwarte okno wyłącza ogrzewanie" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCu-g0-vfS">
+                                <rect key="frame" x="16" y="295" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ak-hM-u2v">
+                                <rect key="frame" x="133" y="684" width="108" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Wybierz">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonMC:" destination="4It-Vs-03l" eventType="touchUpInside" id="7Qi-jy-Yhd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" label="e">
+                            <accessibilityTraits key="traits" none="YES"/>
+                        </accessibility>
+                        <viewLayoutGuide key="safeArea" id="2ZK-tJ-UlX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iDl-sB-bK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4639" y="2373"/>
+        </scene>
+        <!--Tryb weekendowy-->
+        <scene sceneID="xBl-sa-cQz">
+            <objects>
+                <viewController id="lRG-v5-0WW" userLabel="Tryb weekendowy" customClass="ModuleOutsideTheHome" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qRN-wD-Del">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Tryb poza domem" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEj-Ze-7pM" userLabel="Tryb ekonomiczny">
+                                <rect key="frame" x="16" y="88" width="343" height="104.33333333333333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Wszystkie urządzenia wyłączone" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdY-jx-OZF">
+                                <rect key="frame" x="16" y="174" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBF-GI-r27">
+                                <rect key="frame" x="133" y="686" width="108" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Wybierz">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonMOTH1:" destination="lRG-v5-0WW" eventType="touchUpInside" id="0tZ-LH-eCM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="r3m-Cs-EvI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cla-Wg-4NZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5414" y="2373"/>
+        </scene>
+        <!--Baza danych-->
+        <scene sceneID="GIs-Gg-pBg">
+            <objects>
+                <viewController id="X1j-he-KNq" userLabel="Baza danych" customClass="ManagementDataBase" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9gA-d0-TnA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8v7-PU-TNH">
+                                <rect key="frame" x="113" y="490" width="148" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Pokaż baze">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonShowDateBase:" destination="X1j-he-KNq" eventType="touchUpInside" id="hW6-Br-QlU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZf-Zy-tUv">
+                                <rect key="frame" x="113" y="613" width="145" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Dodaj baze">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAddDateBase:" destination="X1j-he-KNq" eventType="touchUpInside" id="DDX-Ax-3kY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqH-xC-U12">
+                                <rect key="frame" x="86" y="551" width="202" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Kasuj wszystko">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDeleteAllData:" destination="X1j-he-KNq" eventType="touchUpInside" id="NP2-Cg-Tpb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wdw-9M-6rz">
+                                <rect key="frame" x="65" y="127" width="240" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vvY-ad-nIX"/>
+                    </view>
+                    <connections>
+                        <outlet property="textLabelLogi" destination="Wdw-9M-6rz" id="WSh-wm-VyR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31n-Pd-luy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3885.5999999999999" y="1580.5418719211823"/>
+        </scene>
+        <!--Zarządzanie-->
+        <scene sceneID="daH-UP-GQ3">
+            <objects>
+                <viewController title="Zarządzanie" id="1Nf-8a-BGB" customClass="Control" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="irD-HO-bpC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ScI-Rl-WHO" customClass="APChartView1" customModule="HomeControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="209" width="375" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showAxes" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleForX" value="Godzina"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleForY" value="kWh"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showGrid" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gridLinesX">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gridLinesY">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLabelsX" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLabelsY" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showDots" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMean" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMeanProgressive" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMax" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMin" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="areaUnderLinesVisible" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OcM-9K-QQx" customClass="APChartView2" customModule="HomeControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="209" width="375" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showAxes" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleForX" value="Godzina"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleForY" value="kWh"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showGrid" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gridLinesX">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gridLinesY">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLabelsX" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLabelsY" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showDots" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMean" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMeanProgressive" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMax" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMin" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="areaUnderLinesVisible" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yue-Xr-A8T" customClass="APChartView3" customModule="HomeControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="209" width="375" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showAxes" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleForX" value="Godzina"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleForY" value="kWh"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showGrid" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gridLinesX">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gridLinesY">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLabelsX" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLabelsY" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showDots" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMean" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMeanProgressive" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMax" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMin" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="areaUnderLinesVisible" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K29-cj-Rhx" userLabel="Puste">
+                                <rect key="frame" x="332" y="209" width="355" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DKC-WP-lGi">
+                                <rect key="frame" x="0.0" y="88" width="375" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Chwilowe zapotrzebowanie na energie elektryczną: " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0c-bf-CiJ" userLabel="Chwilowe-Tekst">
+                                <rect key="frame" x="16" y="561" width="343" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="200 kWh" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmu-yb-VR2" userLabel="Chwilowe">
+                                <rect key="frame" x="112" y="594" width="150" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Przewidywane zapotrzebowanie na energie elektryczną w wybranym przedziale: " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvU-hf-ydx" userLabel="Przewidywane-Tekst">
+                                <rect key="frame" x="16" y="651" width="343" height="47.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="250 KWh" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYh-Qs-CXb" userLabel="Przewidywane">
+                                <rect key="frame" x="112" y="706" width="150" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="reZ-qO-zes"/>
+                    </view>
+                    <connections>
+                        <outlet property="chart1" destination="ScI-Rl-WHO" id="mib-F5-U30"/>
+                        <outlet property="chart2" destination="OcM-9K-QQx" id="x3m-fG-dyQ"/>
+                        <outlet property="chart3" destination="Yue-Xr-A8T" id="qIZ-FP-oUA"/>
+                        <outlet property="hideChartMoment" destination="K29-cj-Rhx" id="LcY-f3-VGd"/>
+                        <outlet property="labelFuturePowerUse" destination="KYh-Qs-CXb" id="3FN-tY-PfP"/>
+                        <outlet property="labelMomentPowerUse" destination="qmu-yb-VR2" id="5Ax-d3-saM"/>
+                        <outlet property="picker" destination="DKC-WP-lGi" id="TwU-7F-KJA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OlL-gx-wxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1330.4000000000001" y="1580.5418719211823"/>
+        </scene>
+        <!--Statystyki-->
+        <scene sceneID="no3-Jh-6ma">
+            <objects>
+                <viewController title="Statystyki" id="ZBE-Zu-eT1" customClass="Stats" customModule="HomeControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="URN-gI-56e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4XE-WL-jh2" customClass="APChartView" customModule="HomeControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="269" width="375" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="qff-xV-S0l"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showAxes" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleForX" value="Godzina"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleForY" value="kWh"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showGrid" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gridLinesX">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gridLinesY">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLabelsX" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showLabelsY" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showDots" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMean" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMeanProgressive" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMax" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showMin" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="areaUnderLinesVisible" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vP9-Nk-yGb">
+                                <rect key="frame" x="150" y="609" width="74" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Dzień">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDay:" destination="ZBE-Zu-eT1" eventType="touchUpInside" id="byx-F5-9pY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7E-PB-aoh">
+                                <rect key="frame" x="137" y="663" width="101" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Miesiąc">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonMonth:" destination="ZBE-Zu-eT1" eventType="touchUpInside" id="x6C-I7-2Ug"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3f-hS-HXj">
+                                <rect key="frame" x="162" y="717" width="50" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Rok">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonYear:" destination="ZBE-Zu-eT1" eventType="touchUpInside" id="2TT-dd-Pdg"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="usZ-in-p4m">
+                                <rect key="frame" x="0.0" y="88" width="375" height="173"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="581197758.38056898">
+                                    <!--2019-06-02 19:49:18 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="473338800">
+                                    <!--2016-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="581076000">
+                                    <!--2019-06-01 10:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zir-6w-QFg" userLabel="Month">
+                                <rect key="frame" x="0.0" y="88" width="375" height="173"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0c5-Zo-GUl" userLabel="Year">
+                                <rect key="frame" x="0.0" y="88" width="375" height="173"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YPx-iM-n5D"/>
+                    </view>
+                    <connections>
+                        <outlet property="chart" destination="4XE-WL-jh2" id="4pb-lk-8nV"/>
+                        <outlet property="pickerDay" destination="usZ-in-p4m" id="N17-Ho-ylw"/>
+                        <outlet property="pickerMonth" destination="Zir-6w-QFg" id="zu4-V1-fja"/>
+                        <outlet property="pickerYear" destination="0c5-Zo-GUl" id="jwT-4m-Kr7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZE-vN-WYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2010.4000000000001" y="1580.5418719211823"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GreenDot" width="800" height="600"/>
+        <image name="RedDot" width="800" height="600"/>
+        <image name="circle" width="1024" height="1024"/>
+        <image name="dol" width="1025" height="724"/>
+        <image name="gora" width="1025" height="724"/>
+        <image name="ic_menu_white_3x" width="72" height="72"/>
+        <image name="mic" width="1024" height="1024"/>
+        <image name="minus" width="1025" height="912"/>
+        <image name="on_off" width="922" height="1025"/>
+        <image name="plus" width="1026" height="1025"/>
+    </resources>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>
